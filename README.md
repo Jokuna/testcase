@@ -1,25 +1,28 @@
-```
-python index.py [문제 번호] [제출 코드]
+# 테스트케이스 자동 채점
 
-```
+## Prerequisites
+
+- make
 
 ## Example
 
-### 성공
-
 ```
-❯ python index.py 1644 ../Baekjoon/0506/1644.cpp
-테스트케이스: 100
-통과 100
-실패 0
+make [언어] PLATFORM=[플랫폼] PROBLEM=[문제 번호] SRC=[제출 파일]
 ```
 
-### 실패
+### baekjoon
+make cpp PLATFORM=baekjoon PROBLEM=1000 SRC=../baekjoon/1000-1999/1000.cpp
+
+```bash
+➜  testcase git:(master) ✗ make cpp PLATFORM=baekjoon PROBLEM=1000 SRC=../baekjoon/1000-1999/1000.cpp
+
+Platform: baekjoon  Problem:  1000 
+
+TestCase:  1 
+Pass
+TestCase:  2 
+Pass
 ```
-❯ python index.py 1644 ../Baekjoon/0506/1644.pre.cpp
-/bin/sh: line 1: 41088 Segmentation fault: 11  timeout -s 9 3s ./Main < .//1644/101.in
-.//1644/101.in 실패
-테스트케이스: 101
-통과 100
-실패 1
-```
+
+### algospot
+make cpp PLATFORM=algospot PROBLEM=helloworld SRC=../algospot/h/helloworld.cpp
