@@ -24,5 +24,8 @@ TestCase:  2
 Pass
 ```
 
+#### python
+make python PLATFORM=baekjoon PROBLEM=1000 SRC=../baekjoon/1000-1999/1000.py
+
 ### algospot
 make cpp PLATFORM=algospot PROBLEM=helloworld SRC=../algospot/h/helloworld.cpp
