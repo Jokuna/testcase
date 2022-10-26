@@ -3,6 +3,7 @@
 ## Prerequisites
 
 - make
+- g++, python3 ...
 
 ## Example
 
@@ -29,3 +30,7 @@ make python PLATFORM=baekjoon PROBLEM=1000 SRC=../baekjoon/1000-1999/1000.py
 
 ### algospot
 make cpp PLATFORM=algospot PROBLEM=helloworld SRC=../algospot/h/helloworld.cpp
+
+## 주의사항
+
+대부분의 테스트케이스 결과값에는 개행문자가 붙습니다. 이에 따라 실패가 뜰 수 있습니다.
